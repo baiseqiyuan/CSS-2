@@ -1,0 +1,20 @@
+.column {
+  float: left;
+}
+ 
+/* 左右侧栏的宽度 */
+.column.side {
+  width: 25%;
+}
+ 
+/* 中间列宽度 */
+.column.middle {
+  width: 50%;
+}
+ 
+/* 响应式布局 - 宽度小于600px时设置上下布局 */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
